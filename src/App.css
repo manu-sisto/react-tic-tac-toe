@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +25,121 @@
     transform: rotate(360deg);
   }
 }
+h1{
+  text-align: center;
+}
+.square {
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+}
+
+.board {
+  margin-left: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgb(95, 95, 95);
+}
+
+.O {
+  color:rgb(185, 185, 185); 
+}
+.X {
+  color: rgb(185, 185, 185);
+}
+
+.databox{
+  width: 350px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px 0px rgb(95, 95, 95);
+  color:#fff;
+}
+
+.databox p {
+  align-self: center;
+}
+
+.blue-button{
+  background: linear-gradient(180deg,#4b91f7,#367af6);
+  background-origin: border-box;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0.5px 1.5px rgb(54 122 246 / 25%), inset 0 0.8px 0 -0.25px hsl(0deg 0% 100% / 20%);
+  color: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+  height: 30px;
+  padding: 4px 14px;
+  touch-action: manipulation;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  align-self: center;
+  justify-self: end; 
+}
+
+.blue-button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+.blue-button:hover {
+  background: linear-gradient(180deg, #2d81ff 0%, #025bff 100%);
+}
+
+.winModal{
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: all .5s;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winModalWindow {
+  width: 350px;
+  height: auto;
+  display: block;
+  background-color: rgb(170, 170, 170);
+}
+
+.modalHeader{
+  height: 20%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  height: 70%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.modalFooter{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
